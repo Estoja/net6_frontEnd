@@ -1,4 +1,35 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar container">
+  <div class="row">
+    <a class="logo col-xs-3" href="#">
+      <img src="/assets/images/logos/net6.jpg" alt="">
+    </a>
+    <span class="navbar-toggle col-xs-2 offset-xs-7" (click)="showSidenav = !showSidenav">
+      <img src="assets/icons/menu/open-menu.svg" alt="">
+  </span>
+  </div>
+  <div class="row">
+    <ul class="main-nav col-xs-4 offset-5"
+        [class.active]="showSidenav"
+        [class.inactive]="!showSidenav">
+      <li>
+          <a href="#" class="nav-links">Inicio</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Servicios</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">Nosotros</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="/assets/images/logos/net6.jpg" width="120" height="87" class="d-inline-block align-top" alt="">
   </a>
@@ -22,3 +53,4 @@
     </ul>
   </div>
 </nav>
+ -->

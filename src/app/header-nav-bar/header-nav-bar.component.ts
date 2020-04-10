@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-nav-bar.component.scss']
 })
 export class HeaderNavBarComponent implements OnInit {
+  showSidenav = false;
 
   constructor() { }
 
