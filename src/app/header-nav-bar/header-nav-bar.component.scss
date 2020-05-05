@@ -9,14 +9,28 @@ mat-toolbar {
       height: 60px;
     }
   }
-
-  ul {
-    list-style: none;
-    li {
-      text-align: center;
-      a {
-        text-decoration: none;
-        color: black;
+  div:nth-child(3) {
+    height: 100%;
+    ul {
+      list-style: none;
+      height: 100%;
+      li {
+        height: 100%;
+        text-align: center;
+        a {
+          display: flex;
+          place-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: black;
+          height: 46px;
+        }
+        &:hover {
+          background-color: #eef1f1;
+        }
+        &.active {
+          border-bottom: 3px solid black;
+        }
       }
     }
   }

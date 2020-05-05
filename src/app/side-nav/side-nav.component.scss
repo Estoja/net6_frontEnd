@@ -1,0 +1,16 @@
+a {
+  &.active {
+    border-bottom: 3px solid black;
+    mat-icon {
+      margin-inline-start: 10px;
+    }
+  }
+  &:hover {
+    background-color: #eef1f1;
+  }
+}
+
+mat-icon, span {
+  transition-property: all;
+  transition-duration: 0.3s;
+}

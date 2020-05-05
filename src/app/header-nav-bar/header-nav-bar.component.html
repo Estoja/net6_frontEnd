@@ -1,25 +1,25 @@
 <mat-toolbar class="row">
-  <a class="space_top" href="#">
+  <a class="space_top" [routerLink]="['/home']">
     <img src="/assets/images/logos/net6.jpg" alt="">
   </a>
-  <div class="offset-xs-8 ak-block ak-sm-none">
+  <div class="offset-xs-8 offset-sm-10 ak-block ak-md-none">
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
-  <div class="container ak-none ak-sm-block">
+  <div class="container ak-none ak-md-block">
     <ul class="row">
-      <li class="col-3">
-          <a href="#" class="nav-links">Inicio</a>
+      <li routerLinkActive="active" class="col-md-2 offset-md-1">
+          <a [routerLink]="['/home']">Inicio</a>
       </li>
-      <li class="col-3">
-        <a href="#" class="nav-links">Servicios</a>
+      <li routerLinkActive="active" class="col-md-2 offset-md-1">
+        <a [routerLink]="['/services']">Servicios</a>
       </li>
-      <li class="col-3">
-          <a href="#" class="nav-links">Nosotros</a>
+      <li routerLinkActive="active" class="col-md-2 offset-md-1">
+          <a [routerLink]="['/aboutUs']">Nosotros</a>
       </li>
-      <li class="col-3">
-          <a href="#" class="nav-links">Contacto</a>
+      <li routerLinkActive="active" class="col-md-2 offset-md-1">
+          <a [routerLink]="['/contact']">Contacto</a>
       </li>
     </ul>
   </div>
