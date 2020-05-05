@@ -1,3 +1,13 @@
-<app-header-nav-bar></app-header-nav-bar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation" [autoFocus]="false">
+    <app-side-nav (sidenavClose)="sidenav.close()"></app-side-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <header>
+      <app-header-nav-bar (sidenavToggle)="sidenav.toggle()"></app-header-nav-bar>
+    </header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

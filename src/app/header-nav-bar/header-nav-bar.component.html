@@ -1,56 +1,26 @@
-<nav class="navbar container">
-  <div class="row">
-    <a class="logo col-xs-3" href="#">
-      <img src="/assets/images/logos/net6.jpg" alt="">
-    </a>
-    <span class="navbar-toggle col-xs-2 offset-xs-7" (click)="showSidenav = !showSidenav">
-      <img src="assets/icons/menu/open-menu.svg" alt="">
-  </span>
+<mat-toolbar class="row">
+  <a class="space_top" href="#">
+    <img src="/assets/images/logos/net6.jpg" alt="">
+  </a>
+  <div class="offset-xs-8 ak-block ak-sm-none">
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
   </div>
-  <div class="row">
-    <ul class="main-nav col-xs-4 offset-5"
-        [class.active]="showSidenav"
-        [class.inactive]="!showSidenav">
-      <li>
+  <div class="container ak-none ak-sm-block">
+    <ul class="row">
+      <li class="col-3">
           <a href="#" class="nav-links">Inicio</a>
       </li>
-      <li>
+      <li class="col-3">
         <a href="#" class="nav-links">Servicios</a>
       </li>
-      <li>
+      <li class="col-3">
           <a href="#" class="nav-links">Nosotros</a>
       </li>
-      <li>
+      <li class="col-3">
           <a href="#" class="nav-links">Contacto</a>
       </li>
     </ul>
   </div>
-</nav>
-
-<!-- 
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="/assets/images/logos/net6.jpg" width="120" height="87" class="d-inline-block align-top" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav no-margin col-8 row align-items-center justify-content-center">
-      <li class="nav-item active col-2 align-items-center">
-        <a class="nav-link" href="#">Inicio</a>
-      </li>
-      <li class="nav-item active col-2 align-items-center">
-        <a class="nav-link" href="#">Nosotros</a>
-      </li>
-      <li class="nav-item active col-2 align-items-center">
-        <a class="nav-link" href="#">Servicios</a>
-      </li>
-      <li class="nav-item active col-2 align-items-center">
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
-    </ul>
-  </div>
-</nav>
- -->
+</mat-toolbar>
