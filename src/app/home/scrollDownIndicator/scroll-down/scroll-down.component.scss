@@ -1,0 +1,22 @@
+div {
+  text-align: center;
+  animation-name: bounce;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  color: #fff;
+  mat-icon {
+    font-size: 48px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+    color: #fff;
+  }
+  100% {
+    transform: translateY(50px);
+    color: transparent;
+  }
+}

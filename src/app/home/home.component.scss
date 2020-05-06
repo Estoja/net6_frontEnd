@@ -1,0 +1,18 @@
+main {
+  margin-block-start: 70px;
+  section {
+    height: 92vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:  #eef1f1;
+    &#whatWeDo {
+      background-image: url(/assets/images/que-hacemos.jpg);
+    }
+    &#solutions {
+      background-image: url(/assets/images/solutions.jpg);
+    }
+  }
+
+}
