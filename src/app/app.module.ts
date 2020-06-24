@@ -15,6 +15,10 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import { FacebookComponent } from './footer/facebook/facebook.component';
+import { InstagramComponent } from './footer/instagram/instagram.component';
+import { LinkedInComponent } from './footer/linked-in/linked-in.component';
+import { PhoneMailComponent } from './footer/phone-mail/phone-mail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import {MatButtonModule} from '@angular/material/button';
     PageNotFoundComponent,
     HeaderNavBarComponent,
     FooterComponent,
-    SideNavComponent
+    SideNavComponent,
+    FacebookComponent,
+    InstagramComponent,
+    LinkedInComponent,
+    PhoneMailComponent
   ],
   imports: [
     BrowserModule,
